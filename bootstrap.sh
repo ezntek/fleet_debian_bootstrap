@@ -9,6 +9,9 @@
 # Licensed under the MIT/Expat License
 #
 
+# Make sure to return if a command executed here returns a non-zero status.
+set -e
+
 log() {
     echo -e "\033[1m[LOG]\033[0m" $@ 
 }
